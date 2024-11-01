@@ -44,7 +44,10 @@ siginUpBtn.addEventListener("click",()=>{
         
     }
 
-    location.href = "signin.html"
+    console.log(error);
+    
+    
+    // location.href = "signin.html"
     
 })
 

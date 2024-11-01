@@ -31,6 +31,6 @@ loginBtn.addEventListener("click",()=>{
         
     }
 
-    location.href = "dashboard.html"
+    // location.href = "profile.html"
 
 })
