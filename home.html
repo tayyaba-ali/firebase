@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home Page</title>
+        <!-- Tailwind CSS -->
+        <link rel="stylesheet" href="output.css">
+        <!-- Sweet Alert -->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.14.5/dist/sweetalert2.all.min.js"></script>
+    </head>
+    <body>
+        <nav class="bg-gray-800">
+            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+                <div class="relative flex items-center h-16  justify-between">
+                    <div class="flex flex-1 items-center justify-start px-6 sm:items-stretch sm:justify-start">
+                        <div class="flex shrink-0 items-center">
+                            <img
+                                class="h-8 w-auto"
+                                style="filter: invert(1) brightness(100) grayscale(100%);"
+                                src="images/open-book.png"
+                                alt="Your Company"
+                            >
+                        </div>
+                        <div class="hidden sm:ml-6 sm:block">
+                          
+                        </div>
+                    </div>
+                    <div class="relative ml-3 flex items-center">
+                        <button id="user-menu-button" class="flex items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white" aria-haspopup="true">
+                            <div id="userName" class="flex  items-center">
+                                  <div class="flex  space-x-4">
+                              
+                                <button id="logout"   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">LogOut</button>
+                                 <button id="dltPro"   class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Delete profile</button>
+                            </div>
+                            </div>
+                            <span class="sr-only">Open user menu</span>
+                            <!-- <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
+                        </button>
+                        <div id="dropdown-menu" class="absolute right-0 z-10 mt-2 w-48 origin-top-right hidden rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5" role="menu">
+                            <button id="open-dialog-button" data-dialog-target="dialog" class="block px-4 py-2 text-sm text-gray-700">Your Profile</button>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">Settings</a>
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">Sign out</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <script defer type="module" src="home.js"></script>
+    </body>
+</html>
